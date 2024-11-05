@@ -60,4 +60,16 @@ VALUES
  ('Maria Marques', '1970/5/30', 'mariamarques@gmail.com', '(19) 99451-4102'),
  ('João Cleber', '1982/04/04', 'jotacleber@gmail.com', '(19) 99012-8512');
 
+ INSERT INTO medicos (nome, idade, especialidade)
+ VALUES
+ ('Dr. Osvaldo Queiroz', 45, 'Cardiologista'),
+ ('Dra. Larissa Silva', 32, 'Pediatra'),
+ ('Dr. Carlos Maranhão', 28, 'Oftamologista'),
+ ('Dra. Laura Marques', 24, 'Ortopedista'),
+ ('Dr. Marcos Braz', 42, 'Clinico Geral'),
+ ('Dra. Julia Fernandes', 32, 'Neurologista'),
+ ('Dr. Thiago Ferraz', 24, 'Otorrinolaringologista'),
+ ('Dra. Nathalia Silva', 36, 'Dermatologista');
+ 
+
 
