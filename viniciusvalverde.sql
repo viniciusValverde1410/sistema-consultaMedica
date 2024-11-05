@@ -62,14 +62,26 @@ VALUES
 
  INSERT INTO medicos (nome, idade, especialidade)
  VALUES
- ('Dr. Osvaldo Queiroz', 45, 'Cardiologista'),
- ('Dra. Larissa Silva', 32, 'Pediatra'),
- ('Dr. Carlos Maranhão', 28, 'Oftamologista'),
- ('Dra. Laura Marques', 24, 'Ortopedista'),
- ('Dr. Marcos Braz', 42, 'Clinico Geral'),
- ('Dra. Julia Fernandes', 32, 'Neurologista'),
- ('Dr. Thiago Ferraz', 24, 'Otorrinolaringologista'),
- ('Dra. Nathalia Silva', 36, 'Dermatologista');
+ ('Dr. Osvaldo Queiroz', 45, 'Cardiologista'), 1
+ ('Dra. Larissa Silva', 32, 'Pediatra'),       2
+ ('Dr. Carlos Maranhão', 28, 'Oftamologista'), 3
+ ('Dra. Laura Marques', 24, 'Ortopedista'),    4
+ ('Dr. Marcos Braz', 42, 'Clinico Geral'),     5
+ ('Dra. Julia Fernandes', 32, 'Neurologista'), 6
+ ('Dr. Thiago Ferraz', 24, 'Otorrinolaringologista'), 7
+ ('Dra. Nathalia Silva', 36, 'Dermatologista'); 8
+
+ INSERT INTO consultas (id_paciente, sintoma_paciente, id_medico, data_consulta)
+ VALUES
+ (2, 'Dor de cabeça', 5, '2025-1-12'),
+ (1, 'Dor no pé', 4, '2024-12-01'),
+ (3, 'Verruga', 8, '2024-11-08'),
+ (4, 'Consulta rotineira', 2, '2024-12-24'),
+ (5, 'Secreção Nasal', 7, '2024-12-15'),
+ (17, 'Dor no coração', 1, '2025-01-03'),
+ (20, 'Dor nas vista', 3, '2024-11-27'),
+ (19, 'Perda de memória', 6, '2024-11-08');
+
  
 
 
