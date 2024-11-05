@@ -96,4 +96,15 @@ LEFT JOIN consultas c
 ON c.id_paciente = p.id_paciente
 WHERE c.id_consulta IS NULL;
 
+ INSERT INTO medicos (nome, idade, especialidade)
+ VALUES
+('Dr. Oliveira Santos', 44, 'Cardiologista'), 
+('Dra. Olivia Santos', 32, 'Ortopedista'),
+('Dr. João Santos', 23, 'Cardiologista');
+
+SELECT m.nome AS médico, m.especialidade
+FROM medicos m 
+LEFT JOIN consultas c
+ON c.id_medico = m.id_medico
+WHERE c.id_consulta IS NULL;
 
