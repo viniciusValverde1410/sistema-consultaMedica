@@ -82,6 +82,13 @@ VALUES
  (20, 'Dor nas vista', 3, '2024-11-27'),
  (19, 'Perda de memória', 6, '2024-11-08');
 
+SELECT p.nome AS paciente, m.nome AS médico, m.especialidade, c.data_consulta, c.id_consulta 
+FROM consultas c 
+JOIN pacientes p 
+ON c.id_paciente = p.id_paciente 
+JOIN medicos m 
+ON c.id_medico = m.id_medico
+WHERE data_consulta <= CURRENT_DATE;
  
 
 
