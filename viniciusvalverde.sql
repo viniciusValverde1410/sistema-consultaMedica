@@ -89,6 +89,11 @@ ON c.id_paciente = p.id_paciente
 JOIN medicos m 
 ON c.id_medico = m.id_medico
 WHERE data_consulta <= CURRENT_DATE;
- 
+
+SELECT p.nome AS paciente, p.email, p.telefone
+FROM pacientes p
+LEFT JOIN consultas c
+ON c.id_paciente = p.id_paciente
+WHERE c.id_consulta IS NULL;
 
 
